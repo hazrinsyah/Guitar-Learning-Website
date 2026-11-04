@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (!userId) {
         alert("User ID is missing. Redirecting to login...");
-        window.location.href = "home.html"; 
+        window.location.href = "index.html"; 
         return;
     }
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 localStorage.setItem("streakDays", data.streak.total_streak || 0);
             } else {
                 alert("Failed to load user data. Please log in again.");
-                window.location.href = "home.html";
+                window.location.href = ".html";
             }
         })
         .catch(error => {

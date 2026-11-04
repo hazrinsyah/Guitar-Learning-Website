@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (!userId) {
         alert("User ID is missing. Redirecting to login...");
-        window.location.href = "home.html";
+        window.location.href = "index.html";
         return;
     }
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const dashboardLink = document.getElementById("dashboard-link");
         
         if (homeLink) {
-            homeLink.href = `home.html?userid=${userId}`;
+            homeLink.href = `index.html?userid=${userId}`;
         }
         
         if (lessonsLink) {
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById("streak-count").innerText = data.streak.total_streak || 0;
             } else {
                 alert("Failed to load user data. Please log in again.");
-                window.location.href = "home.html";
+                window.location.href = "index.html";
             }
         })
         .catch(error => {

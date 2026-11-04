@@ -106,5 +106,5 @@ function handleSignUp() {
 function handleLogout() {
     localStorage.removeItem("loggedInUser");
     localStorage.removeItem("userStreak");
-    window.location.href = "home.html"; // Redirect to home page after logout
+    window.location.href = "index.html"; // Redirect to home page after logout
 }
